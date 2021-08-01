@@ -30,9 +30,9 @@
   function checkStatus(){
     //active user to homepage
   auth.onAuthStateChanged((user)=>{
-    if(window.location.href=="https://mahir-labib-dihan.web.app/admin/"){
+    if(window.location.href=="/admin/"){
     if(user){
-      window.location.replace("https://mahir-labib-dihan.web.app/");
+      window.location.replace("/");
     }else{
       document.body.style.display="block";
     }
@@ -41,7 +41,7 @@
     if(user){
       document.body.style.display="block";
     }else{
-      window.location.replace("https://mahir-labib-dihan.web.app/admin/");
+      window.location.replace("/admin/");
     }
   }})
   }
