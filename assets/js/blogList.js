@@ -1,7 +1,7 @@
 import {db} from '/assets/js/firebase.js'
 
 const blogList = document.querySelector(".blogList");
-document.getElementById("blog-add-button").addEventListener("click", addBlog);
+//   document.getElementById("blog-add-button").addEventListener("click", addBlog);
 
 function removeAllChildNodes(parent) {
     while (parent.firstChild) {
