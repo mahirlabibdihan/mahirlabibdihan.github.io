@@ -12,54 +12,6 @@
   <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
   <script type="module" src="/assets/js/firebase.js"></script>
-  <script type="module">
-    import {db,auth} from '/assets/js/firebase.js'
-
-    document.querySelector(".login-button").addEventListener("click",signIn);
-    function signUp(){
-        var email = document.getElementById("email");
-        var password = document.getElementById("password");
-
-        const promise = auth.createUserWithEmailAndPassword(email.value,password.value);
-    
-        promise.catch(e=>alert(e.message));
-        alert("SignUp Successfully");
-    }
-
-    //signIN function
-    function  signIn(){
-        
-        var email = document.getElementById("email");
-        var password  = document.getElementById("password");
-        const promise = auth.signInWithEmailAndPassword(email.value,password.value);
-        promise.catch(e=>alert(e.message));
-        checkStatus();
-    }
-    function signOut(){
-        auth.signOut();
-        alert("SignOut Successfully from System");
-      }
-    function checkStatus(){
-    //active user to homepage
-    
-    auth.onAuthStateChanged((user)=>{
-      if(window.location.href=="https://mahirlabibdihan.github.io/admin/"){  
-      if(user){
-        window.location.replace("https://mahirlabibdihan.github.io/");
-      }else{
-        document.body.style.display="block";
-      }
-    }
-    else {
-      if(user){
-        document.body.style.display="block";
-      }else{
-        window.location.replace("https://mahirlabibdihan.github.io/admin/");
-      }
-    }});
-  }
-
-  </script>
 </head>
 <body>
     <div class="container">
@@ -95,4 +47,5 @@
         &copy; Mahir Labib Dihan All rights reserved
     </h1>
 </footer>
+<script type="module" src="/assets/js/login.js"></script>
 </html>

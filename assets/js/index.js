@@ -12,3 +12,8 @@ function toggle()
         document.querySelector(".nav-bar-left").style.left="-50%";
     }
 }
+
+window.onload = function()
+{
+    document.querySelector(".container").style.opacity = "100";
+}
