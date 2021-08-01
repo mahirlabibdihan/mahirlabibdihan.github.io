@@ -1,0 +1,105 @@
+<div>
+    <div><span>/*</span></div>
+    <div><span>&nbsp;______&nbsp;&nbsp;&nbsp;_________&nbsp;_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_</span></div>
+    <div><span>|&nbsp;&nbsp;____&nbsp;\|___&nbsp;&nbsp;&nbsp;___|&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;|</span></div>
+    <div><span>|&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;\&nbsp;&nbsp;&nbsp;|&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;|____|&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;|</span></div>
+    <div><span>|&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;____&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;|</span></div>
+    <div><span>|&nbsp;|____/&nbsp;/___|&nbsp;|___|&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;|_____|&nbsp;|</span></div>
+    <div><span>|_______/|_________|_|&nbsp;&nbsp;&nbsp;&nbsp;|_________|</span></div>
+    <div><span>M&nbsp;A&nbsp;H&nbsp;I&nbsp;R&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp;A&nbsp;B&nbsp;I&nbsp;B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;I&nbsp;H&nbsp;A&nbsp;N</span></div>
+    <br />
+    <div><span>*/</span></div>
+    <div><span>#include</span><span>&lt;stdio.h&gt;</span></div>
+    <br />
+    <div><span>int</span>&nbsp;<span>main</span>()</div>
+    <div>{</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;There&nbsp;are&nbsp;two&nbsp;ways&nbsp;to&nbsp;take&nbsp;a&nbsp;whole&nbsp;line&nbsp;as&nbsp;a&nbsp;input&nbsp;.</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>char</span>&nbsp;<span>String</span>[<span>10</span>];</div>
+    <br />
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>int</span>&nbsp;n;</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>printf</span>(<span>"Enter&nbsp;the&nbsp;size&nbsp;of&nbsp;string&nbsp;:&nbsp;"</span>);</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>scanf</span>(<span>"</span><span>%d</span><span>"</span>,&amp;n);</div>
+    <div><span>&nbsp;&nbsp;&nbsp;&nbsp;/***********&nbsp;gets();&nbsp;*********/</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>gets</span>(String);</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>printf</span>(<span>"-&gt;</span><span>%s</span><span>&lt;-</span><span>\n</span><span>"</span>,String);</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Problem&nbsp;1:</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Input&nbsp;:&nbsp;5</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dihan</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;-&gt;&nbsp;n=5;&nbsp;&nbsp;&nbsp;String&nbsp;=&nbsp;&lt;empty&gt;;&nbsp;&nbsp;//&nbsp;Nothing&nbsp;stored&nbsp;in&nbsp;String&nbsp;.&nbsp;//&nbsp;String&nbsp;remains&nbsp;unchanged</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Output&nbsp;:&nbsp;-&gt;&lt;-</span></div>
+    <br />
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Input&nbsp;:&nbsp;5&nbsp;Dihan</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;-&gt;&nbsp;n=5;&nbsp;&nbsp;&nbsp;String&nbsp;=&nbsp;"&nbsp;Dihan";&nbsp;&nbsp;//&nbsp;Extra&nbsp;space&nbsp;in&nbsp;the&nbsp;beginning</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Output&nbsp;:&nbsp;-&gt;&nbsp;Dihan&lt;-</span></div>
+    <br />
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>/*Everything&nbsp;entered&nbsp;after&nbsp;5&nbsp;and&nbsp;before&nbsp;'\n'&nbsp;will&nbsp;be&nbsp;stored&nbsp;into&nbsp;string&nbsp;.*/</span></div>
+    <br /><br /><br /><br /><br /><br />
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Problem&nbsp;2:</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Can't&nbsp;limit&nbsp;the&nbsp;input&nbsp;.&nbsp;Can&nbsp;take&nbsp;input&nbsp;of&nbsp;unlimited&nbsp;size&nbsp;,&nbsp;i.e.&nbsp;Input&nbsp;string&nbsp;size&nbsp;can&nbsp;be&nbsp;greater&nbsp;than&nbsp;the&nbsp;size&nbsp;of&nbsp;the&nbsp;declared&nbsp;string&nbsp;.</span></div>
+    <br />
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>gets</span>(String);</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Input&nbsp;:&nbsp;"I&nbsp;am&nbsp;Mahir&nbsp;Labib&nbsp;Dihan"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Size&nbsp;of&nbsp;input&nbsp;is&nbsp;22&nbsp;.&nbsp;But&nbsp;size&nbsp;of&nbsp;declared&nbsp;string&nbsp;is&nbsp;10&nbsp;(char&nbsp;String[10];)&nbsp;</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>puts</span>(String);</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Output&nbsp;:&nbsp;"I&nbsp;am&nbsp;Mahir&nbsp;Labib&nbsp;Dihan"&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;It&nbsp;means&nbsp;the&nbsp;whole&nbsp;input&nbsp;will&nbsp;store&nbsp;into&nbsp;the&nbsp;string&nbsp;,&nbsp;&nbsp;no&nbsp;matter&nbsp;what&nbsp;the&nbsp;size&nbsp;is&nbsp;.</span></div>
+    <br />
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;We&nbsp;can&nbsp;outcome&nbsp;this&nbsp;by&nbsp;using&nbsp;fgets(String,10,stdin);&nbsp;&nbsp;//&nbsp;But&nbsp;it&nbsp;leaves&nbsp;the&nbsp;'\n'&nbsp;in&nbsp;stdin.</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>/************************/</span></div>
+    <br /><br /><br /><br />
+    <div><span>&nbsp;&nbsp;&nbsp;&nbsp;/********&nbsp;scanf("%[^\n]",Name);&nbsp;**********/</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Problem&nbsp;1:</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Same&nbsp;as&nbsp;first&nbsp;problem&nbsp;of&nbsp;gets().</span></div>
+    <br /><br />
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Problem&nbsp;2:</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Doesn't&nbsp;flushes&nbsp;the&nbsp;'\n'&nbsp;(Enter&nbsp;after&nbsp;the&nbsp;line&nbsp;input)&nbsp;.'\n'&nbsp;remains&nbsp;in&nbsp;the&nbsp;stdin&nbsp;,&nbsp;Which&nbsp;causes&nbsp;the&nbsp;first&nbsp;problem&nbsp;for&nbsp;the&nbsp;next&nbsp;line&nbsp;inputs&nbsp;.</span></div>
+    <br />
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>char</span>&nbsp;<span>Line1</span>[<span>20</span>],<span>Line2</span>[<span>20</span>];</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>scanf</span>(<span>"</span><span>%</span><span>[^</span><span>\n</span><span>]"</span>,Line1);</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>printf</span>(<span>"-&gt;</span><span>%s</span><span>&lt;-</span><span>\n</span><span>"</span>,Line1);</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>scanf</span>(<span>"</span><span>%</span><span>[^</span><span>\n</span><span>]"</span>,Line2);</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>printf</span>(<span>"-&gt;</span><span>%s</span><span>&lt;-</span><span>\n</span><span>"</span>,Line2);</div>
+    <br />
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Input&nbsp;:&nbsp;Dihan</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Output&nbsp;:&nbsp;-&gt;Dihan&lt;-</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;&lt;-</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>scanf</span>(<span>"</span><span>%</span><span>[^</span><span>\n</span><span>]"</span>,Line1);</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>printf</span>(<span>"-&gt;</span><span>%s</span><span>&lt;-</span><span>\n</span><span>"</span>,Line1);</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>scanf</span>(<span>"</span><span>%</span><span>[^</span><span>\n</span><span>]"</span>,Line1);</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>printf</span>(<span>"-&gt;</span><span>%s</span><span>&lt;-</span><span>\n</span><span>"</span>,Line1);</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Input&nbsp;:&nbsp;Dihan</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Output&nbsp;:&nbsp;-&gt;Dihan&lt;-</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;Dihan&lt;-</span></div>
+    <br /><br />
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Problem&nbsp;3:</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;If&nbsp;we&nbsp;set&nbsp;the&nbsp;input&nbsp;width&nbsp;and&nbsp;the&nbsp;input&nbsp;line&nbsp;is&nbsp;greater&nbsp;than&nbsp;the&nbsp;width&nbsp;,&nbsp;the&nbsp;remaining&nbsp;input&nbsp;will&nbsp;left&nbsp;in&nbsp;the&nbsp;stdin&nbsp;,&nbsp;which&nbsp;will&nbsp;cause&nbsp;problem&nbsp;letter&nbsp;.</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>scanf</span>(<span>"</span><span>%</span><span>10[^</span><span>\n</span><span>]"</span>,Line1);</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>printf</span>(<span>"-&gt;</span><span>%s</span><span>&lt;-</span><span>\n</span><span>"</span>,Line1);</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>scanf</span>(<span>"</span><span>%</span><span>[^</span><span>\n</span><span>]"</span>,Line2);</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>printf</span>(<span>"-&gt;</span><span>%s</span><span>&lt;-</span><span>\n</span><span>"</span>,Line2);</div>
+    <br />
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Input&nbsp;:&nbsp;I&nbsp;am&nbsp;Mahir&nbsp;Labib&nbsp;Dihan</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Output&nbsp;:&nbsp;-&gt;I&nbsp;am&nbsp;Mahir&lt;-</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;Labib&nbsp;Dihan&lt;-</span></div>
+    <br /><br /><br />
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;So&nbsp;what's&nbsp;the&nbsp;proper&nbsp;way&nbsp;to&nbsp;take&nbsp;a&nbsp;line&nbsp;as&nbsp;Input????</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Solution&nbsp;:</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>scanf</span>(<span>"</span><span>\n</span><span>%</span><span>10[^</span><span>\n</span><span>]"</span>,Line1);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Ignores&nbsp;whitespace&nbsp;characters&nbsp;at&nbsp;the&nbsp;beginning.</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>scanf</span>(<span>"</span><span>%</span><span>*[^</span><span>\n</span><span>]"</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Reads&nbsp;and&nbsp;Ignores&nbsp;characters&nbsp;left&nbsp;in&nbsp;stdin&nbsp;until&nbsp;'\n'&nbsp;.&nbsp;Thus&nbsp;clears&nbsp;the&nbsp;stdin&nbsp;.&nbsp;'\n'&nbsp;is&nbsp;still&nbsp;left&nbsp;in&nbsp;stdin&nbsp;.</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>getchar</span>();&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Clears&nbsp;'\n'&nbsp;from&nbsp;stdin&nbsp;.</span></div>
+    <br />
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Take&nbsp;a&nbsp;whole&nbsp;line&nbsp;as&nbsp;input&nbsp;:&nbsp;</span></div>
+    <br />
+    <div><span>&nbsp;&nbsp;&nbsp;&nbsp;/*******&nbsp;scanf("\n%10[^\n]",Line1),scanf("%*[^\n]"),getchar();&nbsp;*******/</span></div>
+    <br />
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;or</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;scanf("\n%10[^\n]",Line1);while((getchar())&nbsp;!=&nbsp;'\n');</span></div>
+    <br />
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;You&nbsp;can&nbsp;use&nbsp;this&nbsp;as&nbsp;a&nbsp;macro&nbsp;-</span></div>
+    <div><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span>#define</span><span>&nbsp;strin(</span><span>String_Name</span><span>,</span><span>Input_Width</span><span>)&nbsp;</span><span>scanf</span><span>(</span><span>"&nbsp;</span><span>%</span><span>"</span><span>Input_Width</span><span>"[^</span><span>\n</span><span>]"</span><span>,String_Name),</span><span>scanf</span><span>(</span><span>"</span><span>%</span><span>*[^</span><span>\n</span><span>]"</span><span>),</span><span>getchar</span><span>()</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;String_Name(A&nbsp;pointer)&nbsp;is&nbsp;the&nbsp;address&nbsp;of&nbsp;the&nbsp;string&nbsp;used&nbsp;for&nbsp;taking&nbsp;input&nbsp;.</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span>//&nbsp;Input_Width(Character&nbsp;Array)&nbsp;is&nbsp;the&nbsp;width&nbsp;of&nbsp;the&nbsp;expected&nbsp;input&nbsp;.&nbsp;To&nbsp;set&nbsp;10&nbsp;as&nbsp;width&nbsp;we&nbsp;should&nbsp;pass&nbsp;"10"&nbsp;.&nbsp;</span></div>
+    <br /><br /><br />
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>puts</span>(Line1);</div>
+    <br />
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div>}</div>
+    </div>
