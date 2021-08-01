@@ -1,0 +1,107 @@
+input:-webkit-autofill,input:-webkit-autofill:hover, input:-webkit-autofill:focus{
+-webkit-text-fill-color: white;
+-webkit-box-shadow: 0 0 0px 1000px #191919 inset;
+}
+body{                
+background: #101010;
+sans-serif;  
+}
+
+::selection {
+background: #2ecc71;
+}
+::placeholder {
+    color: gray;
+    opacity: .8;
+  }
+
+.login-form{
+width:420px;
+height:320px;
+background-color:#202020;
+padding: 20px;
+position: absolute;
+text-align: center;                
+left:50%;
+top:50%;
+border-radius: 10px;
+transform: translate(-50%,-50%);
+}
+
+.login-form h1{
+font-size: 250%;
+color: white;
+text-transform: uppercase;
+transition:0.3s;
+}
+
+.login-form h1:hover{
+color:  #2871a1;
+text-transform: uppercase;
+cursor:default;
+transition:0.3s;
+}
+
+.login-form input[type="password"],.login-form input[type="text"]{
+background:none;
+height: 45px;
+width: 70%;
+border-radius: 24px;
+display:block;                
+margin:25px auto;  
+text-align: center;   
+height: 40px;
+border-style: solid;
+border-width: 2px;
+border-color: #FFF;   
+outline: none;   
+color:white;
+transition:0.3s;
+}
+
+.login-form input:focus[type="password"],
+.login-form input:focus[type="text"]{
+width: 90%;
+border-color: #FFF;
+}
+
+/* .login-form input:hover[type="password"],
+.login-form input:hover[type="text"]{
+border-color: #2ecc71;
+} */
+.login-form input[type="submit"],.login-form input[type="button"]{
+border:0;
+background:none;
+height: 45px;
+width: 33%;
+border-radius: 24px;              
+margin-left: 10px;
+margin-right: 10px;     
+text-align: center;   
+border-style: solid;
+border-width: 2px;
+border-color: #FFF;   
+outline: none;  
+color:white; 
+transition:0.3s;     
+}
+.login-form input[type="submit"]:hover,.login-form input[type="button"]:hover{
+color: #1a2531;
+background-color: #FFF;
+transition:0.3s; 
+font-style: italic;
+font-weight: bold;
+}
+
+
+@media (max-width: 550px){
+    .login-form{
+        width: 80%;
+    }
+	.login-form input[type="email"]{
+		width: 85%;
+	}
+	.login-form .message{
+		width: 80%;
+	}
+}

@@ -1,0 +1,38 @@
+/* Clear floats after the columns */
+.projects-container{
+    padding: 0 0 0 30px;
+}
+.table{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.column {
+    display: block;
+    width: 33%;   
+    margin-bottom: 30px;
+    padding-right: 3%;
+}
+.cell-image{
+    padding-bottom: 5%;
+    width: 100%;
+}
+.cell-name{
+    display: block;
+    color: #8a8a8a;
+    text-decoration: none;
+    text-align: center;
+}
+.cell-name:hover{
+    color: #FFF;
+    transition: color 0.5s;
+}
+
+.windows-apps{
+    margin-top: 30px;
+}

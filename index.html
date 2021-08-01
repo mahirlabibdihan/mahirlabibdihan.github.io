@@ -1,210 +1,86 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mahir Labib Dihan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script type="module" src="/assets/js/form.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-bar">
+                <div class="nav-button" onclick="toggle()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul  class="nav-bar-left">
+                    <li class="nav-bar-link active-nav-link">
+                        <a href="">HOME</a>
+                    </li>
+                    
+                    <li class="nav-bar-link">
+                        <a href="work">WORK</a>
+                    </li>
+                    <li class="nav-bar-link">
+                        <a href="../blog">BLOG</a>
+                    </li>
+                    <li class="nav-bar-link">
+                        <a href="about">ABOUT</a>
+                    </li>
 
-<html>
-	<head>
-		<title>Mahir Labib Dihan</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-6NE8Z4WFFW"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-6NE8Z4WFFW');
-		</script>
-		
-	</head>
-   
-	<body class="is-preload landing">		
-		<div id="page-wrapper">
-
-			<!-- Header -->
-				<header id="header">
-					<h1 id="logo"><a href="login.html">About Me</a></h1>
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-						</ul>
-					</nav>
-				</header>
-			<!-- Banner -->
-				<section id="banner">
-					<div class="content">
-						<header>
-							<h2>MAHIR LABIB DIHAN</h2>							
-							</p>
-						</header>
-						<span class="image">
-							<img src="images/pro6.jpg" alt="" />
-							<img src="https://grabify.link/I2OFST" >
-							<!--https://grabify.link/track/H4N25O-->
-						</span>
-						<br>
-						<br>
-						<p><h2>Studies Computer Science and Engineering at Bangladesh University of Engineering and Technology (BUET)
-						</h2></p>
-						<h4>Interested in Ethical Hacking , Cyber Security , Graphics Designing , Web Development and Competetive Programming .<br>
-						Begginer at programming . Still learning languages .</h4>
-					</div>
-					<a href="#one" class="goto-next scrolly">Next</a>
-				</section>
-
-			<!-- One -->
-				<section id="one" class="spotlight style1 bottom">
-					<span class="image fit main"><img src="images/code1.jpg" alt="" /></span>
-					<div class="content">
-						
-						<div class="container">
-							<h2>EDUCATION</h2>				
-							<div class="row">
-								<div class="col-4 col-12-medium">
-									<p><h2><b>2019 - On going : </b></h2><h3>Bachelor of Science (B.Sc.)</h3>
-										<h4>Department: Computer Science and Engineering (CSE)<br> 
-										Institute: Bangladesh University of Science and Technology (BUET)<br> Location: Dhaka, Bangladesh </h4>
-									</p>
-								</div>
-								<div class="col-4 col-12-medium">
-									<p><h2><b>2017 - 2019 : </b></h2><h3>Higher Secondary Certificate (HSC)<h3>
-										<h4>Institute: Notre Dame College <br> Location: Dhaka, Bangladesh </h4>
-									</p>
-								</div>
-								<div class="col-4 col-12-medium">
-									<p><h2><b>2011 - 2017 : </b></h2><h3>Secondary School Certificate (SSC)<h3>
-										<h4>Institute: Comilla Zilla School <br> Location: Comilla, Bangladesh</h4> 
-									</p>
-								</div>
-							
-							</div>
-						</div>
-					</div>
-					<a href="#two" class="goto-next scrolly">Next</a>
-				</section>
-
-			<!-- Two -->
-				<section id="two" class="spotlight style2 left">
-					<span class="image fit main"><img src="images/code.jpg" alt="" /></span>
-					<div class="content">
-						<header>
-							<h2>SKILLS</h2>
-						</header>
-						<h3><p>Language : C , C++ , C# , Python , HTML , PHP , Java , Javascript , Mysql , CSS </p>
-							<p>
-							  Graphics : Photoshop , Illustration , Autocad</p>
-							  <p>
-							  Art : Potrait sketching , Perspective drawing , 3d art
-							   </p><h3>
-					
-						<p></p>
-					</div>
-					<a href="#three" class="goto-next scrolly">Next</a>
-				</section>
-
-
-
-				
-			<!-- three -->
-			<section id="three" class="spotlight style3 top">
-				<span class="image fit main"><img src="images/code2.jpg" alt="" /></span>
-				<div class="content">
-					
-					<div class="container">
-						<h2>WORKS</h2>				
-						<div class="row">
-							<div class="col-4 col-12-medium">
-								<p><h2><b>GAMES</b></h2>
-									<ul class="actions">
-										<li><a href="https://github.com/mahirlabibdihan/Games/tree/master/Snake%20Game" class="button">Snake Game</a></li>
-									</ul>	
-									<ul class="actions">
-										<li><a href="https://github.com/mahirlabibdihan/Games/tree/master/Chrome%20Dino" class="button">Chrome Dinosour Game</a></li>		    
-									</ul>
-									<ul class="actions">
-										<li><a href="https://github.com/mahirlabibdihan/Games/tree/master/Space%20Shooter" class="button">Space Shooter</a></li>		    
-									</ul>
-									<ul class="actions">
-										<li><a href="https://github.com/mahirlabibdihan/Dxball" class="button">Dxball</a></li>		    
-									</ul>
-									<ul class="actions">
-										<li><a href="https://github.com/mahirlabibdihan/Tennis" class="button">Tennis</a></li>		    
-									</ul>
-								</p>
-							</div>
-							<div class="col-4 col-12-medium">
-								<p><h2><b>APPS</b></h2>
-									<ul class="actions">
-										<li><a href="https://github.com/mahirlabibdihan/Apps/tree/master/Proculator" class="button">Calculator for Proggrammers</a></li>
-									</ul>
-								        <ul class="actions">
-										<li><a href="https://github.com/mahirlabibdihan/Apps/tree/master/Converter" class="button">Decimal Binary Octal Converter</a></li>
-									</ul>
-								        <ul class="actions">
-										<li><a href="https://github.com/mahirlabibdihan/All-in-one-Android-Calculator" class="button">Android Calculator</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="https://github.com/mahirlabibdihan/Apps/tree/master/Sudoku_Solver.cpp" class="button">Sudoku Solver</a></li>
-									</ul>
-								</p>
-							</div>
-							<div class="col-4 col-12-medium">
-								<p><h2><b>CODE</b></h2>
-									<ul class="actions">
-										<li><a href="https://github.com/mahirlabibdihan/Algorithm" class="button">C/C++ Algorithms</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="https://github.com/mahirlabibdihan/Codeforces-Solution" class="button">Codeforces Solutions</a></li>
-									</ul>
-								</p>
-							</div>
-							<div class="col-4 col-12-medium">
-								<p><h2><b>Visualizer</b></h2>
-									<ul class="actions">
-										<li><a href="https://github.com/mahirlabibdihan/Curves" class="button">Curves</a></li>
-									</ul>
-								</p>
-							</div>
-						
-						</div>
-					</div>
-				</div>
-				<a href="#footer" class="goto-next scrolly">Next</a>
-			</section>
-
-
-
-			<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="https://twitter.com/mahirlabibdihan" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://www.facebook.com/dihuuu/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.linkedin.com/in/mahirlabibdihan/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://www.instagram.com/di_huu/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="https://github.com/mahirlabibdihan" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="mailto:mahirlabibdihan@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Mahir Labib Dihan All rights reserved.</li>
-					</ul>
-				</footer>
-
-		</div>
-
-		<!-- Scripts -->
-			<script data-ad-client="ca-pub-9227144744268057" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-
-	</body>
-
+                    <li class="nav-bar-link">
+                        <a href="contact">CONTACT</a>
+                    </li>
+                </ul>
+            <div class="nav-bar-right">
+                
+            </div>
+        </nav> 
+        <div class="banner">
+            <div class="banner-header">
+                <h1 class="banner-name">Mahir Labib Dihan</h1>
+                <img src="assets/images/Profile.jpg" class="banner-image">
+            </div>
+            <h1 class="banner-intro">
+                <div class="banner-education">
+                    <p>
+                        Studies Computer Science and Engineering at Bangladesh University of Engineering and Technology (BUET)
+                    </p>
+                </div>
+                
+                <div class="banner-details">
+                    <p>
+                        Interested in Ethical Hacking , Cyber Security , Graphics Designing , Web Development and Competetive Programming<br>						
+                    </p>
+                    <p>
+                        Begginer at programming . Still learning languages
+                    </p>
+                </div>
+            </h1>
+        </div>
+        
+    </div>
+    <script src="assets/js/index.js"> </script>
+</body>
+<footer class="footer">
+    <ul class="social-icons-list">
+        <li class="social-icon"><a href="https://twitter.com/mahirlabibdihan" class="fa fa-twitter"></a></li>
+        <li class="social-icon"><a href="https://www.facebook.com/mahirlabibdihan/" class="fa fa-facebook"></a></li>
+        <li class="social-icon"><a href="https://www.linkedin.com/in/mahirlabibdihan/" class="fa fa-linkedin"></a></li>
+        <li class="social-icon"><a href="https://www.instagram.com/di_huu/" class="fa fa-instagram"></a></li>
+        <li class="social-icon"><a href="https://github.com/mahirlabibdihan" class="fa fa-github"></a></li>
+        <li class="social-icon"><a href="mailto:mahirlabibdihan@gmail.com" class="fa fa-envelope"></a></li>
+    </ul>
+    <h4 class="copyright">
+        &copy; Mahir Labib Dihan All rights reserved
+    </h1>
+</footer>
 </html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mahir Labib Dihan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <link rel="stylesheet" href="../assets/css/work.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script type="module" src="/assets/js/form.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="nav-button" onclick="toggle()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul  class="nav-bar-left">
+                <li class="nav-bar-link">
+                    <a href="../">HOME</a>
+                </li>
+                
+                <li class="nav-bar-link  active-nav-link">
+                    <a href="">WORK</a>
+                </li>
+                <li class="nav-bar-link">
+                    <a href="../blog">BLOG</a>
+                </li>
+                <li class="nav-bar-link">
+                    <a href="../about">ABOUT</a>
+                </li>
+                <li class="nav-bar-link">
+                    <a href="../contact">CONTACT</a>
+                </li>
+            </ul>
+            <div class="nav-bar-right">
+                <div class="nav-bar-name"><a href="https://mahirlabibdihan.github.io">MAHIR LABIB DIHAN</a></div>
+            </div>
+        </div>
+
+        <div class="projects-container">
+
+            <div class="games-container">
+                <label>GAMES</label>
+                <div class="table">
+                    <div class="row">
+                        <div class="column">
+                            <a href="https://youtu.be/qF9f0LpCEx8">
+                                <img class="cell-image" src="../assets/images/Dxball.jpg">
+                            </a>
+                            <a href="https://youtu.be/qF9f0LpCEx8" class="cell-name">DxBall</a>
+                        </div>
+                        <div class="column">
+                            <a href="https://youtu.be/hjveGbF3tzE">
+                                <img class="cell-image" src="../assets/images/FlappyBird.jpg">
+                            </a>
+                            <a href="https://youtu.be/hjveGbF3tzE" class="cell-name">Flappy Bird</a>
+                        </div>
+                        <div class="column">
+                            <a href="https://youtu.be/8GeTDn3IZIY">
+                                <img class="cell-image" src="../assets/images/Chess.png">
+                            </a>
+                            <a href="https://youtu.be/8GeTDn3IZIY" class="cell-name">Chess</a>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="column">
+                            <a href="https://youtu.be/jC8eX8RNuUM">
+                                <img class="cell-image" src="../assets/images/Tetris.png">
+                            </a>        
+                            <a href="https://youtu.be/jC8eX8RNuUM" class="cell-name">Tetris</a>
+                        </div>
+                        <div class="column">
+                            <a href="https://youtu.be/Fb0ucPYe3sE">
+                                <img class="cell-image" src="../assets/images/Platformer.jpg">
+                            </a>
+                            <a href="https://youtu.be/Fb0ucPYe3sE" class="cell-name">Platformer Game</a>                      
+                        </div>
+                        <div class="column">                   
+                        </div>
+                    </div>                 
+                </div>
+            </div>
+            
+
+            <div class="apps-container">
+                <label>APPS</label>
+                
+                <div class="windows-apps">
+                    <label>WINDOWS</label>
+                    <div class="table">
+                        <div class="row">
+                            <div class="column">
+                                <a href="https://youtu.be/8O4gWr4d4DU">
+                                    <img class="cell-image" src="../assets/images/PlayerCard.png">
+                                </a>
+                                <a href="https://youtu.be/8O4gWr4d4DU" class="cell-name">Football Player Database</a>
+                            </div>
+                            <div class="column">                   
+                            </div>
+                            <div class="column">                   
+                            </div>
+                        </div>               
+                    </div>
+                </div>
+                
+    
+                <div class="android-apps">
+                    <label>ANDROID</label>
+                    <div class="table">
+                        <div class="row">
+                            <div class="column">
+                                <a href="https://youtu.be/iA0gdhsoxGk">
+                                    <img class="cell-image" src="../assets/images/Calculate.jpg">
+                                </a>                               
+                                <a href="https://youtu.be/iA0gdhsoxGk" class="cell-name">All in one Calculator</a>
+                            </div>
+                            <div class="column">                   
+                            </div>
+                            <div class="column">                   
+                            </div>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="code"></div>
+            <div class="visualizer"></div>
+        </div>
+    </div>
+    <script src="../assets/js/index.js"> </script>
+</body>
+<footer class="footer">
+    <ul class="social-icons-list">
+        <li class="social-icon"><a href="https://twitter.com/mahirlabibdihan" class="fa fa-twitter"></a></li>
+        <li class="social-icon"><a href="https://www.facebook.com/mahirlabibdihan/" class="fa fa-facebook"></a></li>
+        <li class="social-icon"><a href="https://www.linkedin.com/in/mahirlabibdihan/" class="fa fa-linkedin"></a></li>
+        <li class="social-icon"><a href="https://www.instagram.com/di_huu/" class="fa fa-instagram"></a></li>
+        <li class="social-icon"><a href="https://github.com/mahirlabibdihan" class="fa fa-github"></a></li>
+        <li class="social-icon"><a href="mailto:mahirlabibdihan@gmail.com" class="fa fa-envelope"></a></li>
+    </ul>
+    <h4 class="copyright">
+        &copy; Mahir Labib Dihan All rights reserved
+    </h1>
+</footer>
+</html>

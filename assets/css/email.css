@@ -1,0 +1,121 @@
+input:-webkit-autofill,input:-webkit-autofill:hover, input:-webkit-autofill:focus{
+-webkit-text-fill-color: white;
+-webkit-box-shadow: 0 0 0px 1000px #191919 inset;
+}
+body{                
+background: #101010;
+font-family: sans-serif;  
+}
+
+::selection {
+background: #2ecc71;
+}
+
+
+::placeholder {
+    color: gray;
+    opacity: .8;
+  }
+
+.email-form{
+	width: 420px;
+	height:420px;
+	background-color:#202020;
+	padding: 20px;
+	position: absolute;
+	text-align: center;                
+	left:50%;
+	top:50%;
+	border-radius: 10px;
+	transform: translate(-50%,-50%);
+}
+
+.email-form h1{
+	display: block;
+	font-size: 250%;
+	color: white;
+	text-transform: uppercase;
+	transition:0.3s;
+	text-align: center;
+}
+
+.email-form h1:hover{
+	color:  #2871a1;
+	text-transform: uppercase;
+	cursor:default;
+	transition:0.3s;
+}
+
+.email-form input[type="email"]{
+	background:none;
+	width: 75%;
+	border-radius: 24px;
+	display:block;                
+	margin:25px auto;  
+	text-align: center;   
+	height: 40px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #FFF;   
+	outline: none;  
+	color:white;
+	transition:0.3s;
+	font-size: 12px;
+	font-family: sans-serif;  
+}
+.email-form .message{
+	background:none;
+	height: 150px;
+	width: 70%;
+	border-radius: 10px;
+	display:block;                
+	margin:25px auto;  
+	text-align: center;   
+	border-style: solid;
+	border-width: 2px;
+	border-color: #FFF;   
+	outline: none;   
+	color:white;
+	resize: none;
+	padding:10px;
+	font-size: 12px;
+	font-family: sans-serif;  
+}
+
+
+.email-form input[type="button"]{
+	border:0;
+	background:none;
+	height: 45px;
+	width: 130px;
+	border-radius: 24px;              
+	margin-left: 10px;
+	margin-right: 10px;     
+	text-align: center;   
+	height: 45px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #FFF;   
+	outline: none;  
+	color:white; 
+	transition:0.3s;     
+}
+.email-form input[type="button"]:hover{
+color: #1a2531;
+background-color: #FFF;
+transition:0.3s; 
+font-style: italic;
+font-weight: bold;
+}
+
+@media (max-width: 550px){
+    .email-form{
+        width: 80%;
+    }
+	.email-form input[type="email"]{
+		width: 85%;
+	}
+	.email-form .message{
+		width: 80%;
+	}
+}
