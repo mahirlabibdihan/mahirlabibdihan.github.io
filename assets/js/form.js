@@ -30,7 +30,7 @@
   function checkStatus(){
     //active user to homepage
   auth.onAuthStateChanged((user)=>{
-    if(window.location.href=="/admin/"){
+    if(window.location.href=="https://mahirlabibdihan.github.io/admin/"){
     if(user){
       window.location.replace("/");
     }else{
