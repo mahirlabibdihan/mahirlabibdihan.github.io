@@ -1,7 +1,3 @@
-import firebase from 'firebase/app'
-import 'firebase/auth'
-import 'firebase/firestore'
-import 'firebase/analytics'
 var firebaseConfig = {
   apiKey: "AIzaSyAwnHPPkx4GBd1QtDBsG-RbeAVj9S5F_rY",
   authDomain: "mahir-labib-dihan.firebaseapp.com",
