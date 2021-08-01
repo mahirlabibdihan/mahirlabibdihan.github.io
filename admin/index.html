@@ -4,14 +4,58 @@
   <title>Mahir Labib Dihan</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/assets/css/index.css">
-  <link rel="stylesheet" href="/assets/css/form.css">
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <link rel="stylesheet" href="../assets/css/form.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
   <script type="module" src="/assets/js/form.js"></script>
+  <script type="module">
+    import {db,auth} from '/assets/js/form.js'
+
+    document.querySelector(".login-button").addEventListener("click",signIn);
+    function signUp(){
+        var email = document.getElementById("email");
+        var password = document.getElementById("password");
+
+        const promise = auth.createUserWithEmailAndPassword(email.value,password.value);
+    
+        promise.catch(e=>alert(e.message));
+        alert("SignUp Successfully");
+    }
+
+    //signIN function
+    function  signIn(){
+        
+        var email = document.getElementById("email");
+        var password  = document.getElementById("password");
+        const promise = auth.signInWithEmailAndPassword(email.value,password.value);
+        promise.catch(e=>alert(e.message));
+        checkStatus();
+    }
+    function checkStatus(){
+    //active user to homepage
+    
+    auth.onAuthStateChanged((user)=>{
+      if(window.location.href=="https://mahirlabibdihan.github.io/admin/"){  
+      if(user){
+        window.location.replace("https://mahirlabibdihan.github.io/");
+      }else{
+        document.body.style.display="block";
+      }
+    }
+    else {
+      if(user){
+        document.body.style.display="block";
+      }else{
+        window.location.replace("https://mahirlabibdihan.github.io/admin/");
+      }
+    }});
+  }
+
+  </script>
 </head>
 <body>
     <div class="container">
@@ -28,8 +72,8 @@
                 <h1>Login</h1>
                 <input type="text" placeholder="Email Adress" id="email" required>
                 <input type="password" placeholder="Password" autocomplete="new-password" id="password" required>
-                <input type="button" value="Sign Up" onclick="signUp()">
-                <input type="button" value="Login" onclick="signIn()">
+                <input class="sign-up-button" type="button" value="Sign Up">
+                <input id="login-button" class="login-button" type="button" value="Login">
         </form>
     </div>
     <script src="/assets/js/index.js"> </script>
