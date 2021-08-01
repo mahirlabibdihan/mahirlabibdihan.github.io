@@ -1,4 +1,3 @@
-
   function signUp(){
     var email = document.getElementById("email");
     var password = document.getElementById("password");
@@ -26,24 +25,23 @@
     alert("SignOut Successfully from System");
   }
 
-  
-  function checkStatus(){
+   function checkStatus(){
     //active user to homepage
-  auth.onAuthStateChanged((user)=>{
-    if(window.location.href=="https://mahirlabibdihan.github.io/admin/"){
-    if(user){
-      window.location.replace("/");
-    }else{
-      document.body.style.display="block";
-    }
-  }
-  else {
-    if(user){
-      document.body.style.display="block";
-    }else{
-      window.location.replace("/admin/");
-    }
-  }})
+  // auth.onAuthStateChanged((user)=>{
+  //   if(window.location.href=="https://mahirlabibdihan.github.io/admin/"){
+  //   if(user){
+  //     window.location.replace("/");
+  //   }else{
+  //     document.body.style.display="block";
+  //   }
+  // }
+  // else {
+  //   if(user){
+  //     document.body.style.display="block";
+  //   }else{
+  //     window.location.replace("/admin/");
+  //   }
+  // }})
   }
 
  // Your web app's Firebase configuration
