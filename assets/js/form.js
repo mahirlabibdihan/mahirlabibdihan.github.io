@@ -65,4 +65,4 @@
   const db = firebase.firestore();
   checkStatus();
   db.settings({timeStampsInSnapshots: true});
-  export{db}
+  export{db,auth}
