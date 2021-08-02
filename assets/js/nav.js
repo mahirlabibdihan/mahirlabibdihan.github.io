@@ -9,7 +9,6 @@ navBar.innerHTML+="" +
     "                    <li class=\"nav-bar-link\">\n" +
     "                        <a href=\"/\">HOME</a>\n" +
     "                    </li>\n" +
-    "                    \n" +
     "                    <li class=\"nav-bar-link\">\n" +
     "                        <a href=\"/work\">WORK</a>\n" +
     "                    </li>\n" +
@@ -24,5 +23,4 @@ navBar.innerHTML+="" +
     "                    </li>\n" +
     "                </ul>\n" +
     "            <div class=\"nav-bar-right\">\n" +
-    "                \n" +
     "            </div>";
