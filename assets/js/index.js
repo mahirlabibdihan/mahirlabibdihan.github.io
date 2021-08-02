@@ -17,3 +17,5 @@ window.onload = function()
 {
     document.querySelector(".container").style.opacity = "100";
 }
+
+document.querySelector(".nav-button").addEventListener("click",toggle);

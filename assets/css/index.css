@@ -52,7 +52,7 @@ body{
     transition: color 0.5s;
 }
 
-.nav-bar-name a{
+.nav-bar-name{
     /* margin-left : auto; */
     color: white;
     font-size: 130%;
