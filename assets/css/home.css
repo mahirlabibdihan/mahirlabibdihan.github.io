@@ -35,7 +35,7 @@
     word-wrap: break-word;
 }
 
-@media (max-width: 800px){
+@media (max-width: 960px){
     .banner-header{
         margin-top: 4vh;
         height: 40vh;
@@ -44,6 +44,7 @@
 
     .banner-image{
         width: 25vh;
+        max-width: 80vw;
         margin: 20px auto auto auto;
     }
 
@@ -62,10 +63,5 @@
     .banner-details{
         font-size: 2.5vw;
         line-height:4vw;
-    }
-}
-@media (max-width: 1000px){
-    .banner-name{
-        font-size: 5vw;
     }
 }

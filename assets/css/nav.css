@@ -1,11 +1,11 @@
 /* Navigation Bar */
 .nav-bar{
-    letter-spacing: 2px;
     display: flex;
     justify-content: space-between;
     padding: 30px;
     color: white;
     align-items: center;
+    letter-spacing: 2px;
 }
 
 .nav-button{

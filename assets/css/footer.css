@@ -11,6 +11,7 @@
     list-style-type: none;
     text-align: center;
     width: 250px;
+    max-width: 40vw;
 }
 
 .social-icon{
@@ -36,3 +37,11 @@
     text-align: center;
     width: 40vw;
 }
+
+
+@media (max-width: 800px){
+    .copyright{
+        font-size: 2vw;
+    }
+}
+
