@@ -60,16 +60,17 @@
 
 @media (max-width: 800px){
     .nav-bar-left{
+        z-index: 100;
         width: 100%;
         background-color:#181818 !important;
         display:flex;
-        height: 30%;
+        height: 30vh;
         flex-direction:column;
         justify-content: space-around;
         position: absolute;
         vertical-align:bottom;
         align-items:center;
-        top:12%;
+        top:10vh;
         left:-50%;
         transform:translateX(-50%);
         transition: left .8s;
