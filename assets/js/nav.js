@@ -22,5 +22,6 @@ navBar.innerHTML+="" +
     "                        <a href=\"/contact\">CONTACT</a>\n" +
     "                    </li>\n" +
     "                </ul>\n" +
-    "            <div class=\"nav-bar-right\">\n" +
-    "            </div>";
+    "                   <div class=\"nav-bar-right\">\n" +
+    "                <div class=\"nav-bar-name\"><a href=\"https://mahirlabibdihan.github.io\"></a></div>\n" +
+    "            </div>" ;

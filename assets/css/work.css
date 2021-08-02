@@ -1,6 +1,10 @@
 /* Clear floats after the columns */
+.container{
+    padding-top: 1%;
+}
 .projects-container{
     padding: 0 0 0 30px;
+    margin-top: 9vh;
 }
 .table{
     display: flex;

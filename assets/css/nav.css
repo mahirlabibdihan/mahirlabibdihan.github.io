@@ -1,11 +1,15 @@
 /* Navigation Bar */
 .nav-bar{
     display: flex;
+    position: fixed;
     justify-content: space-between;
     padding: 30px;
     color: white;
     align-items: center;
     letter-spacing: 2px;
+    background-color:rgba(20,20,20,.5);
+    width: 100vw;
+    top: 0;
 }
 
 .nav-button{
