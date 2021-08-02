@@ -61,15 +61,15 @@
 @media (max-width: 800px){
     .nav-bar-left{
         display:flex;
-        width: 100%;
-        background-color:#181818 !important;
-        height: 30vh;
         flex-direction:column;
         justify-content: space-around;
         position: absolute;
-        vertical-align:bottom;
-        align-items:center;
-        top:9vh;
+        background-color:#181818 !important;
+        height: 30vh;
+        width: 100%;
+        vertical-align: bottom;
+        align-items: center;
+        top:30vh;
         left:-50%;
         transform:translateX(-50%);
         transition: left .8s;
