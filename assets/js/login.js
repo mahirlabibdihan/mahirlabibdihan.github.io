@@ -1,4 +1,5 @@
-import {db,auth} from '/assets/js/firebase.js'
+const auth =  firebase.auth();
+
 document.querySelector(".login-button").addEventListener("click",signIn);
 function signUp(){
     var email = document.getElementById("email");

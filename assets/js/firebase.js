@@ -11,8 +11,3 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
-
-const auth =  firebase.auth();
-const db = firebase.firestore();
-db.settings({timeStampsInSnapshots: true});
-export{db,auth}
