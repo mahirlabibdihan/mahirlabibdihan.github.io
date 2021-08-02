@@ -57,5 +57,8 @@ socialIcon6.appendChild(socialIconLink6);
 socialIconsList.appendChild(socialIcon6);
 
 let copyright = document.createElement('h4');
-copyright.appendChild(document.createTextNode("&copy; Mahir Labib Dihan All rights reserved"));
-socialIconsList.appendChild(copyright);
+copyright.classList.add("copyright");
+copyright.appendChild(document.createTextNode('© Mahir Labib Dihan All rights reserved'));
+
+footer.appendChild(socialIconsList);
+footer.appendChild(copyright);
