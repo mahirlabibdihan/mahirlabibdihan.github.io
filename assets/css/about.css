@@ -10,9 +10,12 @@
 .about-me {
     border-radius: 10px;
     background-color: rgba(0,0,0,.4);
-    margin: 0% 10%;
     padding: 20px;
-    margin-top: 15vh;
+    width: 75%;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
 }
 .about-me label {
     opacity: 100%;
@@ -26,9 +29,9 @@
 @media (max-width: 960px){
     .about-me {
         background-color: rgba(255,255,255,.1);
-        margin-top: 75vw;
     }
     .about-me label{
         font-size: 15px;
+        line-height: 5vw;
     }
 }
