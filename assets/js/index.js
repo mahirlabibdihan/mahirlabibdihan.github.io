@@ -5,7 +5,7 @@ function toggle()
     checked=!checked;
     if(checked==true)
     {
-        document.querySelector(".nav-bar-left").style.left="50%";
+        document.querySelector(".nav-bar-left").style.left="45%";
     }
     else
     {
