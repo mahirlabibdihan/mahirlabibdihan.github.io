@@ -1,5 +1,8 @@
+.container{
+    padding-top: 1%;
+}
 .blogList{
-
+    margin-top: 5vh;
 }
 .blogList a {
     display: block;
