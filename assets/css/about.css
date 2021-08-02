@@ -20,7 +20,7 @@
     line-height: 4vw;
 }
 
-@media (max-width: 900px){
+@media (max-width: 860px){
     .about-me {
         background-color: rgba(255,255,255,.1);
         margin-top: 65vw;
