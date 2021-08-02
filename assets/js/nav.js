@@ -6,19 +6,19 @@ navBar.innerHTML+="" +
     "                    <div class=\"line\"></div>\n" +
     "                </div>\n" +
     "                <ul  class=\"nav-bar-left\">\n" +
-    "                    <li class=\"nav-bar-link\">\n" +
+    "                    <li id=\"home-tab\" class=\"nav-bar-link\">\n" +
     "                        <a href=\"/\">HOME</a>\n" +
     "                    </li>\n" +
-    "                    <li class=\"nav-bar-link\">\n" +
+    "                    <li id=\"work-tab\" class=\"nav-bar-link\">\n" +
     "                        <a href=\"/work\">WORK</a>\n" +
     "                    </li>\n" +
-    "                    <li class=\"nav-bar-link\">\n" +
+    "                    <li id=\"blog-tab\" class=\"nav-bar-link\">\n" +
     "                        <a href=\"/blog\">BLOG</a>\n" +
     "                    </li>\n" +
-    "                    <li class=\"nav-bar-link\">\n" +
+    "                    <li id=\"about-tab\" class=\"nav-bar-link\">\n" +
     "                        <a href=\"/about\">ABOUT</a>\n" +
     "                    </li>\n" +
-    "                    <li class=\"nav-bar-link\">\n" +
+    "                    <li id=\"contact-tab\" class=\"nav-bar-link\">\n" +
     "                        <a href=\"/contact\">CONTACT</a>\n" +
     "                    </li>\n" +
     "                </ul>\n" +
