@@ -35,10 +35,10 @@ function createNavBarLeft(){
 function createNavBarRight(){
     let navBarRight = document.createElement('div');
     navBarRight.classList.add("nav-bar-right");
-    let navBarName = document.createElement('div');
-    navBarName.classList.add("nav-bar-name");
-    navBarName.appendChild(document.createTextNode("MAHIR LABIB DIHAN"));
-    navBarRight.appendChild(navBarName);
+    // let navBarName = document.createElement('div');
+    // navBarName.classList.add("nav-bar-name");
+    // navBarName.appendChild(document.createTextNode("MAHIR LABIB DIHAN"));
+    // navBarRight.appendChild(navBarName);
     return navBarRight;
 }
 function createNavBar(){
