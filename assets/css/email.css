@@ -68,6 +68,7 @@ background: #2ecc71;
 	transition:0.3s;
 }
 .email-form .message{
+	font-family: sans-serif;
 	background:none;
 	height: 50%;
 	width: 100%;
