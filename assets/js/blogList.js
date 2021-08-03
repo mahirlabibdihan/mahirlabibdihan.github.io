@@ -14,7 +14,7 @@ function updateList(){
     db.collection("c_blogs").get().then((snapshot)=>{
         snapshot.docs.forEach(doc=>{
             let a = document.createElement('a');
-            a.href = "codes/"+doc.data().url;
+            a.href = "/blog/cprogramming/codes/"+doc.data().url;
             var link = document.createTextNode(doc.data().name);
             a.appendChild(link);
             blogList.appendChild(a);
