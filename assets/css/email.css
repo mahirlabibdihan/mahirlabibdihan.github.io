@@ -18,89 +18,81 @@ background: #2ecc71;
   }
 
 .email-form{
-	width: 420px;
-	height:420px;
+	width:420px;
+	max-width: 75%;
+	height: 45vh;
 	background-color:#202020;
-	padding: 20px;
+	padding: 3vh;
 	position: absolute;
-	text-align: center;                
+	text-align: center;
 	left:50%;
 	top:50%;
 	border-radius: 10px;
 	transform: translate(-50%,-50%);
-	z-index:0;
+	align-items: center;
 }
 
-.email-form h1{
-	display: block;
-	font-size: 250%;
+.email-form label{
+	font-size: 5vh;
+	max-font-size: 3vw;
 	color: white;
 	text-transform: uppercase;
 	transition:0.3s;
-	text-align: center;
+	cursor:default;
+	font-family: sans-serif;
+	font-weight: bold;
+	display: block;
+	margin: 3vh 0;
 }
 
-.email-form h1:hover{
-	color:  #2871a1;
-	text-transform: uppercase;
-	cursor:default;
-	transition:0.3s;
+.vbox{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 70%;
+	width: 80%;
+	align-items: center;
+	margin: auto;
 }
 
 .email-form input[type="email"]{
 	background:none;
-	width: 75%;
+	height: 14%;
+	width: 100%;
 	border-radius: 24px;
-	display:block;                
-	margin:25px auto;  
-	text-align: center;   
-	height: 40px;
-	border-style: solid;
-	border-width: 2px;
-	border-color: #FFF;   
-	outline: none;  
+	display:block;
+	text-align: center;
+	border: solid 2px #FFF;
+	outline: none;
 	color:white;
 	transition:0.3s;
-	font-size: 12px;
-	font-family: sans-serif;  
 }
 .email-form .message{
 	background:none;
-	height: 150px;
-	width: 70%;
+	height: 50%;
+	width: 100%;
 	border-radius: 10px;
-	display:block;                
-	margin:25px auto;  
-	text-align: center;   
-	border-style: solid;
-	border-width: 2px;
-	border-color: #FFF;   
-	outline: none;   
+	display:block;
+	text-align: center;
+	border: solid 2px #FFF;
+	outline: none;
 	color:white;
-	resize: none;
-	padding:10px;
-	font-size: 12px;
-	font-family: sans-serif;  
+	transition:0.3s;
 }
 
 
 .email-form input[type="button"]{
-	border:0;
 	background:none;
-	height: 45px;
-	width: 130px;
-	border-radius: 24px;              
-	margin-left: 10px;
-	margin-right: 10px;     
-	text-align: center;   
-	height: 45px;
-	border-style: solid;
-	border-width: 2px;
-	border-color: #FFF;   
-	outline: none;  
-	color:white; 
-	transition:0.3s;     
+	height: 17%;
+	width: 40%;
+	border-radius: 24px;
+	text-align: center;
+	border: solid 2px #FFF;
+	outline: none;
+	color:white;
+	transition:0.3s;
 }
+
 .email-form input[type="button"]:hover{
 color: #1a2531;
 background-color: #FFF;
@@ -110,13 +102,7 @@ font-weight: bold;
 }
 
 @media (max-width: 550px){
-    .email-form{
-        width: 80%;
-    }
-	.email-form input[type="email"]{
+	.vbox{
 		width: 85%;
-	}
-	.email-form .message{
-		width: 80%;
 	}
 }

@@ -57,13 +57,13 @@ background: #2ecc71;
 .hbox{
     display: flex;
     justify-content: space-between;
-    height: 25%;
-    width: 85%;
+    height: 23%;
+    width: 82%;
 }
 .login-form input[type="password"],.login-form input[type="text"]{
     background:none;
     height: 20%;
-    width: 8%;
+    width: 80%;
     border-radius: 24px;
     display:block;
     text-align: center;
@@ -75,13 +75,13 @@ background: #2ecc71;
 
 .login-form input:focus[type="password"],
 .login-form input:focus[type="text"]{
-    width: 90%;
+    width: 100%;
 }
 
 .login-form input[type="submit"],.login-form input[type="button"]{
     background:none;
     height: 100%;
-    width: 48%;
+    width: 45%;
     border-radius: 24px;
     text-align: center;
     border: solid 2px #FFF;
@@ -98,17 +98,7 @@ background: #2ecc71;
 }
 
 @media (max-width: 550px){
-    .login-form{
-        width: 80%;
-    }
-    .login-form input[type="password"],.login-form input[type="text"]{
-        width: 80%;
-    }
-    .login-form input:focus[type="password"],
-    .login-form input:focus[type="text"]{
+    .vbox{
         width: 95%;
-    }
-    .login-form input[type="submit"],.login-form input[type="button"]{
-        width: 46%;
     }
 }
