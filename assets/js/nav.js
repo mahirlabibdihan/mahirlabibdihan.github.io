@@ -1,5 +1,24 @@
-const navBar = document.querySelector(".nav-bar");
-navBar.innerHTML+="" +
+var checked=0;
+function toggle()
+{
+    checked=!checked;
+    if(checked==true)
+    {
+        document.querySelector(".nav-bar-left").style.left="50vw";
+    }
+    else
+    {
+        document.querySelector(".nav-bar-left").style.left="-50vw";
+    }
+}
+
+window.onload = function()
+{
+    document.querySelector(".container").style.opacity = "100";
+}
+
+
+document.querySelector(".nav-bar").innerHTML+="" +
     "<div class=\"nav-button\">\n" +
     "                    <div class=\"line\"></div>\n" +
     "                    <div class=\"line\"></div>\n" +
@@ -25,3 +44,5 @@ navBar.innerHTML+="" +
     "                   <div class=\"nav-bar-right\">\n" +
     "                <div class=\"nav-bar-name\"><a href=\"https://mahirlabibdihan.github.io\"></a></div>\n" +
     "            </div>" ;
+
+document.querySelector(".nav-button").addEventListener("click",toggle);
