@@ -33,7 +33,7 @@ function addBlog(){
         }
     );
     let a = document.createElement('a');
-    a.href = "codes/"+Url;
+    a.href = "/blog/cprogramming/codes/"+Url;
     var link = document.createTextNode(Name);
     a.appendChild(link);
     blogList.appendChild(a);
