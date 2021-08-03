@@ -37,3 +37,8 @@
 .windows-apps{
     margin-top: 30px;
 }
+@media (max-width: 800px){
+    .cell-name{
+        font-size: 3vw;
+    }
+}

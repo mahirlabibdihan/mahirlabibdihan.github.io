@@ -9,34 +9,47 @@
 <url>
   <loc>https://mahirlabibdihan.github.io/</loc>
   <lastmod>2021-08-03T15:22:48+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
   <loc>https://mahirlabibdihan.github.io/about/</loc>
   <lastmod>2021-08-03T15:22:48+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mahirlabibdihan.github.io/work/</loc>
   <lastmod>2021-08-03T15:22:48+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mahirlabibdihan.github.io/contact/</loc>
   <lastmod>2021-08-03T15:22:48+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mahirlabibdihan.github.io/blog/</loc>
   <lastmod>2021-08-03T15:22:48+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mahirlabibdihan.github.io/admin/</loc>
   <lastmod>2021-08-03T15:22:48+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mahirlabibdihan.github.io/blog/cprogramming/</loc>
   <lastmod>2021-08-03T15:22:48+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
+  <url>
+    <loc>https://mahirlabibdihan.github.io/assets/Resume.pdf</loc>
+    <lastmod>2021-08-01T13:12:37+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
   <url>
     <loc>https://mahirlabibdihan.github.io/blog/cprogramming/codes/</loc>
     <lastmod>2021-08-03T15:22:48+00:00</lastmod>
+    <priority>0.512</priority>
   </url>
 
 </urlset>
