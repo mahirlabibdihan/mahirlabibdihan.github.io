@@ -8,6 +8,7 @@
     background-color:rgba(20,20,20,.5);
     width: 100vw;
     z-index: 1;
+    top:0;
 }
 
 .nav-button{
