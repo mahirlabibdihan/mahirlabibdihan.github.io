@@ -5,6 +5,10 @@ body{
     font-weight: normal;
     color: white;
 }
+::selection {
+    background: #2ecc71;
+}
+
 ::placeholder {
     color: gray;
     opacity: .8;
