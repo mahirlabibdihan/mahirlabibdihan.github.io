@@ -1,23 +1,19 @@
-var checked=0;
-function toggle()
-{
-    checked=!checked;
-    if(checked==true)
-    {
-        document.querySelector(".nav-bar-left").style.left="50vw";
-    }
-    else
-    {
-        document.querySelector(".nav-bar-left").style.left="-50vw";
+var checked = 0;
+
+function toggle() {
+    checked = !checked;
+    if (checked == true) {
+        document.querySelector(".nav-bar-left").style.left = "50vw";
+    } else {
+        document.querySelector(".nav-bar-left").style.left = "-50vw";
     }
 }
 
-window.onload = function()
-{
+window.onload = function () {
     document.querySelector(".container").style.opacity = "100";
 }
 
-document.querySelector(".nav-bar").innerHTML+= '\
+document.querySelector(".nav-bar").innerHTML += '\
     <div class="nav-button">\
         <div class="line"></div>\
         <div class="line"></div>\
@@ -34,4 +30,4 @@ document.querySelector(".nav-bar").innerHTML+= '\
     <div class="nav-bar-name"><a href="https://mahirlabibdihan.github.io"></a></div>\
     </div>';
 
-document.querySelector(".nav-button").addEventListener("click",toggle);
+document.querySelector(".nav-button").addEventListener("click", toggle);

@@ -1,5 +1,5 @@
 const footer = document.querySelector(".footer");
-footer.innerHTML+='' +
+footer.innerHTML += '' +
     '<ul class="social-icons-list">\n' +
     '        <li class="social-icon"><a href="https://twitter.com/mahirlabibdihan" class="fa fa-twitter"></a></li>\n' +
     '        <li class="social-icon"><a href="https://www.facebook.com/mahirlabibdihan/" class="fa fa-facebook"></a></li>\n' +

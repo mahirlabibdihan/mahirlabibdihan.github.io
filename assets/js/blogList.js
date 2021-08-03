@@ -2,6 +2,7 @@ const db = firebase.firestore();
 db.settings({timeStampsInSnapshots: true});
 
 const blogList = document.querySelector(".blogList");
+
 //   document.getElementById("blog-add-button").addEventListener("click", addBlog);
 
 function removeAllChildNodes(parent) {
@@ -9,12 +10,13 @@ function removeAllChildNodes(parent) {
         parent.removeChild(parent.firstChild);
     }
 }
-function updateList(){
+
+function updateList() {
     removeAllChildNodes(blogList);
-    db.collection("c_blogs").get().then((snapshot)=>{
-        snapshot.docs.forEach(doc=>{
+    db.collection("c_blogs").get().then((snapshot) => {
+        snapshot.docs.forEach(doc => {
             let a = document.createElement('a');
-            a.href = "/blog/cprogramming/codes/"+doc.data().url;
+            a.href = "/blog/cprogramming/codes/" + doc.data().url;
             var link = document.createTextNode(doc.data().name);
             a.appendChild(link);
             blogList.appendChild(a);
@@ -23,7 +25,7 @@ function updateList(){
 }
 
 
-function addBlog(){
+function addBlog() {
     let Name = document.querySelector(".blog-name-input").value;
     let Url = document.querySelector(".blog-url-input").value;
     db.collection("c_blogs").doc(Name).set(
@@ -33,7 +35,7 @@ function addBlog(){
         }
     );
     let a = document.createElement('a');
-    a.href = "/blog/cprogramming/codes/"+Url;
+    a.href = "/blog/cprogramming/codes/" + Url;
     var link = document.createTextNode(Name);
     a.appendChild(link);
     blogList.appendChild(a);
