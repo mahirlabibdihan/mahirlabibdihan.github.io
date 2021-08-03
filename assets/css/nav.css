@@ -48,6 +48,9 @@
 }
 
 @media (max-width: 800px){
+    .nav-bar{
+        padding: 3%;
+    }
     .nav-bar-left{
         display:flex;
         flex-direction:column;
