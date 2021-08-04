@@ -116,3 +116,9 @@ font-weight: bold;
 		width: 85%;
 	}
 }
+
+@media (max-width: 300px){
+	/*.email-form label{*/
+	/*	font-size: 12vw;*/
+	/*}*/
+}
