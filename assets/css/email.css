@@ -72,6 +72,7 @@ background: #2ecc71;
 	outline: none;
 	color:white;
 	transition:0.3s;
+	font-size: 1.6vh;
 }
 .email-form .message{
 	font-family: sans-serif;
@@ -85,6 +86,7 @@ background: #2ecc71;
 	outline: none;
 	color:white;
 	transition:0.3s;
+	font-size: 1.6vh;
 }
 
 
@@ -98,6 +100,7 @@ background: #2ecc71;
 	outline: none;
 	color:white;
 	transition:0.3s;
+	font-size: 1.6vh;
 }
 
 .email-form input[type="button"]:hover{
