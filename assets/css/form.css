@@ -19,9 +19,15 @@ background: #2ecc71;
 }
 
 .login-form{
-    width:420px;
-    max-width: 75%;
+    /*width:420px;*/
+    /*max-width: 75%;*/
+    /*height: 40vh;*/
+
+    width:50vh;
+    max-width: 75vw;
     height: 40vh;
+    max-height: 80vw;
+
     background-color:#202020;
     padding: 3vh;
     position: absolute;
