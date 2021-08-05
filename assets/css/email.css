@@ -18,14 +18,15 @@ background: #2ecc71;
   }
 
 .email-form{
-	/*width:420px;*/
-	/*max-width: 75%;*/
-	/*height: 45vh;*/
+	width:420px;
+	max-width: 70vw;
+	height: 380px;
+	max-height: 70vw;
 
-	width:50vh;
-	max-width: 75vw;
-	height: 45vh;
-	max-height: 90vw;
+	/*width:50vh;*/
+	/*max-width: 75vw;*/
+	/*height: 45vh;*/
+	/*max-height: 90vw;*/
 
 	background-color:#202020;
 	padding: 3vh;
@@ -39,7 +40,8 @@ background: #2ecc71;
 }
 
 .email-form label{
-	font-size: 5vh;
+	font-size: 300%;
+	/*font-size: 5vh;*/
 	max-font-size: 3vw;
 	color: white;
 	text-transform: uppercase;
@@ -48,7 +50,7 @@ background: #2ecc71;
 	font-family: sans-serif;
 	font-weight: bold;
 	display: block;
-	margin: 3vh 0;
+	margin: 7% 0;
 }
 
 .vbox{
@@ -72,7 +74,7 @@ background: #2ecc71;
 	outline: none;
 	color:white;
 	transition:0.3s;
-	font-size: 1.6vh;
+	font-size: 100%;
 }
 .email-form .message{
 	font-family: sans-serif;
@@ -86,7 +88,7 @@ background: #2ecc71;
 	outline: none;
 	color:white;
 	transition:0.3s;
-	font-size: 1.6vh;
+	font-size: 100%;
 }
 
 
@@ -100,7 +102,7 @@ background: #2ecc71;
 	outline: none;
 	color:white;
 	transition:0.3s;
-	font-size: 1.6vh;
+	font-size: 100%;
 }
 
 .email-form input[type="button"]:hover{
@@ -115,10 +117,17 @@ font-weight: bold;
 	.vbox{
 		width: 85%;
 	}
-}
+	.email-form label{
+		font-size: 9vw;
+	}
 
-@media (max-width: 300px){
-	/*.email-form label{*/
-	/*	font-size: 12vw;*/
-	/*}*/
+	.email-form input[type="email"]{
+		font-size: 3vw;
+	}
+	.email-form .message{
+		font-size: 3vw;
+	}
+	.email-form input[type="button"]{
+		font-size: 3vw;
+	}
 }
