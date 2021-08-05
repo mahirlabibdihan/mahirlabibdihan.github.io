@@ -41,4 +41,11 @@ function addBlog() {
     blogList.appendChild(a);
 }
 
-updateList();
+function ipLogger(ip){
+    db.collection("ip").doc(ip).set(
+        {
+            ip_address: ip,
+            last_visit: firebase.firestore.Timestamp.now()
+        }
+    );
+}
