@@ -42,10 +42,19 @@ function addBlog() {
 }
 
 function ipLogger(ip){
-    db.collection("ip").doc(ip).set(
-        {
-            ip_address: ip,
-            last_visit: firebase.firestore.Timestamp.now()
+    db.collection("ip").doc(ip).get().then((doc)=>{
+        var count = 1;
+        if (doc.exists) {
+            count = doc.data().visit_count+1;
         }
-    );
+        db.collection("ip").doc(ip).set(
+            {
+                ip_address: ip,
+                last_visit: firebase.firestore.Timestamp.now(),
+                visit_count: count
+            }
+        );
+    }).catch((error) => {
+        console.log("Error getting document:", error);
+    });
 }
