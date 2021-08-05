@@ -19,14 +19,16 @@ background: #2ecc71;
 }
 
 .login-form{
-    /*width:420px;*/
-    /*max-width: 75%;*/
-    /*height: 40vh;*/
+    width:420px;
+    max-width: 70vw;
+    height: 350px;
+    max-height: 70vw;
 
-    width:50vh;
-    max-width: 75vw;
-    height: 40vh;
-    max-height: 80vw;
+
+    /*width:50vh;*/
+    /*max-width: 75vw;*/
+    /*height: 40vh;*/
+    /*max-height: 80vw;*/
 
     background-color:#202020;
     padding: 3vh;
@@ -40,7 +42,7 @@ background: #2ecc71;
 }
 
 .login-form label{
-    font-size: 5vh;
+    font-size: 300%;
     color: white;
     text-transform: uppercase;
     transition:0.3s;
@@ -48,7 +50,7 @@ background: #2ecc71;
     font-family: sans-serif;
     font-weight: bold;
     display: block;
-    margin: 3vh 0;
+    margin: 7% 0;
 }
 .vbox{
     display: flex;
@@ -77,6 +79,7 @@ background: #2ecc71;
     outline: none;
     color:white;
     transition:0.3s;
+    font-size: 100%;
 }
 
 .login-form input:focus[type="password"],
@@ -94,6 +97,7 @@ background: #2ecc71;
     outline: none;
     color:white;
     transition:0.3s;
+    font-size: 100%;
 }
 .login-form input[type="submit"]:hover,.login-form input[type="button"]:hover{
     color: #1a2531;
@@ -106,5 +110,14 @@ background: #2ecc71;
 @media (max-width: 550px){
     .vbox{
         width: 95%;
+    }
+    .login-form label{
+        font-size: 9vw;
+    }
+    .login-form input[type="password"],.login-form input[type="text"]{
+        font-size: 3vw;
+    }
+    .login-form input[type="submit"],.login-form input[type="button"]{
+        font-size: 3vw;
     }
 }
