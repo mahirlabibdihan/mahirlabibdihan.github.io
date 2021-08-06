@@ -98,7 +98,7 @@
                     <div class="row">
                         <div class="column">
                             <a href="https://youtu.be/iA0gdhsoxGk">
-                                <img class="cell-image" src="../assets/images/Calculate.jpg" alt="diculator">
+                                <img class="cell-image" src="../assets/images/Calculate.png" alt="diculator">
                             </a>
                             <a href="https://youtu.be/iA0gdhsoxGk" class="cell-name">All in one Calculator</a>
                         </div>
@@ -168,12 +168,20 @@
         </div>
     </div>
 </div>
+<script>
+    window.onload = function () {
+        var x=document.querySelectorAll("img");
+        for(var i=0;i<x.length;i++){
+            x[i].style.opacity = "100%"
+        }
+    }
+</script>
 </body>
 <footer class="footer"></footer>
+
 <script src="/assets/js/nav.js"></script>
 <script>
     document.getElementById('work-tab').classList.add("active-nav-link");
 </script>
 <script src="/assets/js/footer.js"></script>
-<script src="/assets/js/index.js"></script>
 </html>
