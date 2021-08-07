@@ -18,8 +18,13 @@
     margin-bottom: 30px;
 }
 
+.icons{
+    transition: color 0.5s;
+}
+
 .icons:hover{
     color: white;
+    transition: color 0.5s;
 }
 .social-icon{
     cursor: pointer;
