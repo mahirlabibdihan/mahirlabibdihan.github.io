@@ -42,6 +42,12 @@
     padding:3%;
 }
 @media (max-width: 800px){
+    .row{
+        flex-direction: column;
+    }
+    .column {
+        width: 100%;
+    }
     .cell-name{
         font-size: 2.5vw;
     }
