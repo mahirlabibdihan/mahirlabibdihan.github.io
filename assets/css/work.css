@@ -1,7 +1,6 @@
 /* Clear floats after the columns */
 .projects-container{
     padding: 0 30px;
-    margin-top: 80px;
 }
 .table{
     display: flex;
