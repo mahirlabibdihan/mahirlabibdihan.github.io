@@ -19,16 +19,17 @@
     display: block;
     width: 30%;
     margin-bottom: 3%;
+}
+.available-project{
     border: 2px solid #191919;
     background-color: #191919;
     border-radius:0 0 4% 4%;
-
 }
 
 .cell-image{
     opacity: 0;
     /*margin-bottom: 5%;*/
-    width: 100%;
+    max-width: 100%;
 }
 .cell-name{
     display: block;
@@ -44,6 +45,9 @@
     .column {
         width: 100%;
         margin-bottom: 5%;
+    }
+    .unavailable-project{
+        display: none;
     }
     .cell-name{
         font-size: 2.5vw;
