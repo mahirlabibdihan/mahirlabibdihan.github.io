@@ -18,6 +18,9 @@
     margin-bottom: 30px;
 }
 
+.icons:hover{
+    color: white;
+}
 .social-icon{
     cursor: pointer;
     margin-right: 15px;
