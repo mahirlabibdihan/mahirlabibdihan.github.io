@@ -41,17 +41,21 @@
     text-align: center;
     padding:3%;
 }
-@media (max-width: 800px){
+@media (max-width: 600px){
     .row{
         flex-direction: column;
     }
     .column {
         width: 100%;
+        margin-bottom: 5%;
+    }
+    .unavailable-project{
+        display: none;
     }
     .cell-name{
         font-size: 2.5vw;
     }
     .table{
-        margin: 3% 0;
+        margin: 5% 0 10% 0;
     }
 }
