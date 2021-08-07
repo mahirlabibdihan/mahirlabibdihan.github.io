@@ -24,16 +24,15 @@
 
 }
 .available-project{
-    border: 3px solid #252525;
+    border: 2px solid #252525;
     background-color: #252525;
-    border-radius:0 0 10px 10px;
+    border-radius:0 0 4% 4%;
 }
 
 .cell-image{
     opacity: 0;
     /*margin-bottom: 5%;*/
     width: 100%;
-
 }
 .cell-name{
     display: block;
