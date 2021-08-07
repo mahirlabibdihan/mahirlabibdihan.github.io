@@ -1,6 +1,8 @@
 /* Clear floats after the columns */
-.projects-container{
-    padding: 0 30px;
+.container {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
 }
 .table{
     display: flex;
