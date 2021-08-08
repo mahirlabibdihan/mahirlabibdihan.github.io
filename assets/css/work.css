@@ -4,10 +4,16 @@
     padding-left: 30px;
     padding-bottom: 30px;
 }
+
+.project-container{
+    border: 2px solid #191919;
+    border-radius:0 0 20px 20px;
+    margin-bottom: 30px;
+}
 .table{
     display: flex;
     flex-direction: column;
-    margin: 30px 0;
+    margin: 30px 30px 0 30px;
 }
 .table-title{
     display: block;
@@ -49,6 +55,10 @@
     padding:3%;
 }
 @media (max-width: 700px){
+    .table{
+        margin: 30px 30px 0 30px;
+    }
+
     .table-title{
         padding: 4%;
     }
@@ -65,7 +75,5 @@
     .cell-name{
         font-size: 2.5vw;
     }
-    .table{
-        margin: 5% 0 10% 0;
-    }
+
 }
