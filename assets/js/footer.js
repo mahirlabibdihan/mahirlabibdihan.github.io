@@ -10,5 +10,5 @@ footer.innerHTML += '' +
     '        <li class="social-icon"><a href="mailto:mahirlabibdihan@gmail.com" class="icons fa fa-envelope"></a></li>\n' +
     '</ul>\n' +
     '<h4 class="copyright">\n' +
-    '    &copy; Mahir Labib Dihan All rights reserved\n' +
+    '    &copy;2021 Mahir Labib Dihan. All rights reserved.\n' +
     '</h4>';
