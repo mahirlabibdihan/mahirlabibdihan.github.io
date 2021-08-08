@@ -9,8 +9,6 @@ function toggle() {
     }
 }
 
-
-
 document.querySelector(".nav-bar").innerHTML += '\
     <div class="nav-button">\
         <div class="line"></div>\

@@ -1,6 +1,3 @@
-const db2 = firebase.firestore();
-db2.settings({timeStampsInSnapshots: true});
-
 function getThumbnail(name,url,img_src){
     return  '<div class="column">\n' +
             '        <a href='+url+'>\n' +
@@ -17,7 +14,7 @@ function getTable(title){
 
     let table = document.createElement('div');
     table.classList.add('table');
-    db2.collection('work').doc('table').collection(title).get().then((snapshot) => {
+    db.collection('work').doc('table').collection(title).get().then((snapshot) => {
         snapshot.docs.forEach(doc => {
             table.innerHTML+=getThumbnail(doc.data().name,doc.data().url,doc.data().img_src);
         });
