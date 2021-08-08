@@ -1,23 +1,22 @@
 /* Clear floats after the columns */
-.container {
-
-}
-
 .projects-container{
     padding: 0 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    box-sizing:border-box;
 }
 .project-container{
     border: 3px solid #191919;
     border-radius:0 0 20px 20px;
-    margin-bottom: 30px;
 }
 .table{
     display: flex;
     flex-wrap: wrap;
     box-sizing:border-box;
     width: 100%;
-    gap: 2vw;
-    padding: 2vw;
+    gap: 3vw;
+    padding: 3vw;
 }
 .table-title{
     display: block;
@@ -28,32 +27,19 @@
     padding:30px;
     background-color: #191919;
 }
-/*.row{*/
-/*    display: flex;*/
-/*    !*flex-direction: row;*!*/
-/*    !*flex-wrap: wrap;*!*/
-/*    !*justify-content: space-between;*!*/
-/*    gap: 30px;*/
-/*    width: 100%;*/
-/*}*/
+
 .column {
     display: block;
-    /*min-width: 400px;*/
     min-width: 0px;
     border: 2px solid #191919;
     background-color: #191919;
     border-radius:0 0 4% 4%;
 
-    width: calc(25% - 4px - 1.5vw);
-    /*margin-bottom: 3%;*/
+    width: calc(25% - 4px - 2.25vw);
 }
-/*.available-project{*/
-
-/*}*/
 
 .cell-image{
-    opacity: 0;
-    /*margin-bottom: 5%;*/
+    opacity: 100%;
     width: 100%;
 }
 .cell-name{
@@ -66,12 +52,12 @@
 
 @media (max-width: 1450px){
     .column{
-        width: calc(33.33% - 4px - 1.33vw);
+        width: calc(33.33% - 4px - 2vw);
     }
 }
 @media (max-width: 1000px){
     .column{
-        width: calc(50% - 4px - 1vw);
+        width: calc(50% - 4px - 1.5vw);
     }
 }
 @media (max-width: 550px){
@@ -82,16 +68,6 @@
 @media (max-width: 700px){
     .table-title{
         padding: 4%;
-    }
-    .row{
-        flex-direction: column;
-    }
-    .column {
-        /*width: 100%;*/
-        /*margin-bottom: 5%;*/
-    }
-    .unavailable-project{
-        display: none;
     }
     .cell-name{
         font-size: 2.5vw;
