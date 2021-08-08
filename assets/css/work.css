@@ -13,7 +13,8 @@
 .table{
     display: flex;
     flex-direction: column;
-    margin: 30px 30px 0 30px;
+    margin: 30px;
+    gap: 30px;
 }
 .table-title{
     display: block;
@@ -27,14 +28,16 @@
 }
 .row{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    /*flex-direction: row;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-between;*/
+    gap:30px;
     width: 100%;
 }
 .column {
     display: block;
-    width: 30%;
-    margin-bottom: 3%;
+    width: 100%;
+    /*margin-bottom: 3%;*/
 }
 .available-project{
     border: 2px solid #191919;
@@ -55,10 +58,6 @@
     padding:3%;
 }
 @media (max-width: 700px){
-    .table{
-        margin: 30px 30px 0 30px;
-    }
-
     .table-title{
         padding: 4%;
     }
@@ -66,8 +65,8 @@
         flex-direction: column;
     }
     .column {
-        width: 100%;
-        margin-bottom: 5%;
+        /*width: 100%;*/
+        /*margin-bottom: 5%;*/
     }
     .unavailable-project{
         display: none;
