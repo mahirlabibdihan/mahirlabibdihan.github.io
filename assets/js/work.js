@@ -18,6 +18,9 @@ function getTable(title){
         snapshot.docs.forEach(doc => {
             table.innerHTML+=getThumbnail(doc.data().name,doc.data().url,doc.data().img_src);
         });
+
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden";
     });
     // table.innerHTML+=getThumbnail('DxBall','https://youtu.be/qF9f0LpCEx8','/assets/images/Dxball.jpg','dxball');
 
@@ -32,13 +35,6 @@ function main(){
     projects.appendChild(getTable('APPS'));
     projects.appendChild(getTable('VISUALIZER'));
     projects.appendChild(getTable('CODES'));
-
-    window.onload = function () {
-        var x = document.querySelectorAll("img");
-        for (var i = 0; i < x.length; i++) {
-            x[i].style.opacity = "100%"
-        }
-    }
 }
 
 main();
