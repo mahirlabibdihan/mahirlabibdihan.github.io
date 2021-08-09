@@ -36,7 +36,7 @@ body{
 }
 
 .loader > img {
-    width: 25vh;
+    width: 100px;
 }
 
 .loader.hidden {
