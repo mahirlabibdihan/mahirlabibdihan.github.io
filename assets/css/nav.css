@@ -49,23 +49,23 @@
 
 @media (max-width: 800px){
     .nav-bar{
-        padding: 30px;
+        padding: 4vw;
     }
 
     .nav-bar-left{
         display:flex;
         flex-direction:column;
-        justify-content: space-around;
         position: absolute;
         background-color:#181818 !important;
-        height: 30vh;
         width: 100vw;
         align-items: center;
         top:30vh;
         left:-50vw;
         transform:translateX(-50vw);
         transition: left .8s;
+        gap: 6vw;
         z-index: 1;
+        padding: 6vw 0;
     }
 
     .nav-bar-link{
@@ -81,14 +81,13 @@
     .nav-button{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         cursor : pointer;
-        height: 19px;
+        gap: .7vw;
     }
 
     .line{
         background-color:white;
-        width: 30px;
-        height: 2px;
+        width: 5vw;
+        height: .4vw;
     }
 }

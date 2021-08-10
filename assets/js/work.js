@@ -1,19 +1,19 @@
 function getThumbnail(name,url,img_src){
-    return  '<div class="column">\n' +
+    return  '<div class="grid-item">\n' +
             '        <a href='+url+'>\n' +
-            '            <img class="cell-image" src='+img_src+' alt='+name+'>\n' +
+            '            <img class="grid-item-image" src='+img_src+' alt='+name+'>\n' +
             '        </a>\n' +
-            '        <label class="cell-name">'+name+'</label>\n' +
+            '        <label class="grid-item-name">'+name+'</label>\n' +
             '    </div>';
 }
 
 function getTable(title){
     let project = document.createElement('div');
-    project.classList.add('project-container');
-    project.innerHTML+='<label class="table-title">'+title+'</label>';
+    project.classList.add('project-item');
+    project.innerHTML+='<label class="grid-title">'+title+'</label>';
 
     let table = document.createElement('div');
-    table.classList.add('table');
+    table.classList.add('grid-container');
     db.collection('work').doc('table').collection(title).get().then((snapshot) => {
         snapshot.docs.forEach(doc => {
             table.innerHTML+=getThumbnail(doc.data().name,doc.data().url,doc.data().img_src);
@@ -30,7 +30,7 @@ function getTable(title){
 }
 
 function main(){
-    const projects = document.querySelector(".projects-container");
+    const projects = document.querySelector(".project-container");
     projects.appendChild(getTable('GAMES'));
     projects.appendChild(getTable('APPS'));
     projects.appendChild(getTable('VISUALIZER'));

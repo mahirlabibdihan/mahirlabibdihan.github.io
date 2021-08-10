@@ -1,24 +1,23 @@
 /* Clear floats after the columns */
-.projects-container{
+.project-container{
     padding: 0 30px 30px 30px;
     display: flex;
     flex-direction: column;
-    gap: 3vw;
-    box-sizing:border-box;
+    gap: 30px;
 }
-.project-container{
+.project-item{
     border: 3px solid #191919;
     border-radius:0 0 20px 20px;
 }
-.table{
+.grid-container{
     display: flex;
     flex-wrap: wrap;
-    box-sizing:border-box;
     width: 100%;
-    gap: 3vw;
-    padding: 3vw;
+    gap: 4vw;
+    padding: 4vw;
+    box-sizing:border-box;
 }
-.table-title{
+.grid-title{
     display: block;
     color: white;
     font-weight: bold;
@@ -28,48 +27,51 @@
     background-color: #191919;
 }
 
-.column {
-    display: block;
+.grid-item {
     min-width: 0px;
     border: 2px solid #191919;
     background-color: #191919;
     border-radius:0 0 4% 4%;
-
-    width: calc(25% - 4px - 2.25vw);
+    width: calc(25% - 4px - 3vw);
 }
 
-.cell-image{
-    opacity: 100%;
+.grid-item-image{
     width: 100%;
 }
-.cell-name{
+.grid-item-name{
     display: block;
     color: #8a8a8a;
-    text-decoration: none;
     text-align: center;
     padding:3%;
 }
 
 @media (max-width: 1450px){
     .column{
-        width: calc(33.33% - 4px - 2vw);
+        width: calc(33.33% - 4px - 2.67vw);
     }
 }
 @media (max-width: 1000px){
-    .column{
-        width: calc(50% - 4px - 1.5vw);
+    .grid-item{
+        width: calc(50% - 4px - 2vw);
     }
 }
 @media (max-width: 550px){
-    .column{
+    .grid-item{
         width: calc(100% - 4px);
     }
 }
 @media (max-width: 700px){
-    .table-title{
+    .grid-title{
         padding: 4%;
     }
-    .cell-name{
+    .grid-item-name{
         font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 800px){
+    .project-container{
+        padding: 0 4vw 4vw 4vw;
+        gap: 4vw;
     }
 }
