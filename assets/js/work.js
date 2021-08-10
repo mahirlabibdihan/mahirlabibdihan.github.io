@@ -36,7 +36,6 @@ function main(){
     projects.appendChild(getTable('WEBSITES'));
     projects.appendChild(getTable('VISUALIZER'));
     projects.appendChild(getTable('CODES'));
-
 }
 
 main();
