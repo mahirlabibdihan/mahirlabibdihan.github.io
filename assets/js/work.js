@@ -33,9 +33,10 @@ function main(){
     const projects = document.querySelector(".project-container");
     projects.appendChild(getTable('GAMES'));
     projects.appendChild(getTable('APPS'));
+    projects.appendChild(getTable('WEBSITES'));
     projects.appendChild(getTable('VISUALIZER'));
     projects.appendChild(getTable('CODES'));
-    projects.appendChild(getTable('WEBSITES'));
+
 }
 
 main();
