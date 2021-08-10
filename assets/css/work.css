@@ -1,9 +1,9 @@
 /* Clear floats after the columns */
 .project-container{
-    padding: 0 30px 30px 30px;
+    padding: 0 30px 4vw 30px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 4vw;
 }
 .project-item{
     border: 3px solid #191919;
@@ -46,7 +46,7 @@
 }
 
 @media (max-width: 1450px){
-    .column{
+    .grid-item{
         width: calc(33.33% - 4px - 2.67vw);
     }
 }
