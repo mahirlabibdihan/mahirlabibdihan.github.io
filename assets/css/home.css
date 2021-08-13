@@ -30,10 +30,12 @@
 .banner-education{
     font-size: 100%;
     word-wrap: break-word;
+    color: #eeeeee;
 }
 .banner-details{
     font-size:60%;
     word-wrap: break-word;
+    color: #eeeeeec5;
 }
 
 @media (max-width: 960px){
