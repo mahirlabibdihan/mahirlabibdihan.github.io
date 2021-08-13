@@ -65,3 +65,22 @@
         line-height:4vw;
     }
 }
+
+@media (max-width: 700px){
+    .banner-name{
+        margin: auto auto 20px auto;
+        font-size: 6vw;
+    }
+    .banner-intro{
+        text-align:center;
+    }
+    .banner-education{
+        font-size: 5vw;
+        line-height:6vw;
+    }
+    .banner-details{
+        font-size: 3.5vw;
+        line-height:5vw;
+    }
+}
+
