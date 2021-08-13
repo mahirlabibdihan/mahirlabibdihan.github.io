@@ -63,9 +63,10 @@
 @media (max-width: 700px){
     .grid-title{
         padding: 4%;
+        font-size: 3.5vw;
     }
     .grid-item-name{
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
 }
 
