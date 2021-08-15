@@ -35,9 +35,9 @@ body{
     align-items: center;
 }
 .loader-animation {
-    border: 7px solid #505050;
+    border: 7px solid #303030;
     border-radius: 50%;
-    border-top: 7px solid #303030;
+    border-top: 7px solid #606060;
     width: 30px;
     height: 30px;
     -webkit-animation: spin 2s linear infinite; /* Safari */
