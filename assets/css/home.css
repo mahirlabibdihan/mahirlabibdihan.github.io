@@ -60,6 +60,7 @@
 @media (max-width: 960px){
     .banner{
         padding-top: 6vw;
+        gap: 6vw;
     }
     .banner-header{
         flex-direction: column;
