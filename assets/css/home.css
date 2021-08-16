@@ -2,6 +2,7 @@
     padding-left: 8vw;
     padding-right: 8vw;
 }
+
 .banner{
     display: flex;
     flex-direction: column;
@@ -31,19 +32,30 @@
     word-wrap: break-word;
     text-align: right;
     font-weight: normal;
-    margin:0;
+    gap: 40px;
 }
 
 .banner-education{
-    font-size: 100%;
+    font-size: 200%;
     word-wrap: break-word;
-    margin:0;
+    line-height: 45px;
 }
 .banner-details{
-    font-size:60%;
-    word-wrap: break-word;
-    margin:0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
 }
+
+.banner-details>h4{
+    font-size: 120%;
+    margin: 0;
+    font-weight: normal;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    line-height: 30px;
+}
+
 
 @media (max-width: 960px){
     .banner{
@@ -71,7 +83,7 @@
         line-height:5vw;
     }
     .banner-details{
-        font-size: 2.5vw;
+        font-size: 2vw;
         line-height:4vw;
     }
 }

@@ -36,6 +36,16 @@ function main(){
     projects.appendChild(getTable('WEBSITES'));
     projects.appendChild(getTable('VISUALIZER'));
     projects.appendChild(getTable('CODES'));
+
+    // window.onload = function () {
+    //     const loader = document.querySelector(".loader");
+    //     loader.className += " hidden";
+    // }
+
+    // window.addEventListener("load",function () {
+    //     const loader = document.querySelector(".loader");
+    //     loader.className += " hidden";
+    // });
 }
 
 main();
